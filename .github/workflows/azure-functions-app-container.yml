@@ -66,7 +66,7 @@ jobs:
         uses: docker/build-push-action@v5 
         with:
           push: true
-          tags: shinyapp1.azurecr.io/${{ env.REPO }}:${{ github.sha }}
+          tags: cristanregistry.azurecr.io/${{ env.REPO }}:${{ github.sha }}
           file: ./Dockerfile
 # deploy job deplys the created container image to the Azure app service 
   deploy:
